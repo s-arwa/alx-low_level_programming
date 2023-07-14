@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdlib.h>
 int main(void)
-/*
- * we gonna use if statment
- * to determain if the number is positive negative
+/**
+ * main -main
+ * description
  * all gonna be inside main function
  */
 {
@@ -14,15 +14,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("the number %d is greater than 0\n", n);
+		printf("%d is pisitive\n", n);
 	}
-	else if (n == 0)
+	else if (n < 0)
 	{
-		printf("the number %d is 0\n", n);
+		printf("%d is negative\n", n);
 	}
 	else
 	{
-		printf("the number %d is negative\n", n);
+		printf("%d is 0\n", n);
 	}
 	return (0);
 }
