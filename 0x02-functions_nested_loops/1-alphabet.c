@@ -1,5 +1,13 @@
 #include "main.h"
 
 /**
- * void 
- * a function that prints alphabets followed by a new line.
+* print_alphabet - Prints the alphabet followed by a new line.
+*/
+void print_alphabet(void)
+{
+int var;
+
+for (var = 'a'; var <= 'z'; ++var)
+_putchar(var);
+_putchar('\n');
+}
