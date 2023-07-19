@@ -1,18 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 
-/** 
-
-  * main - the Entry point 
-  * 
-  * Return : Always 0 (success)
-  
-  */
-
+/**
+* main - main block
+* Description: Print _putchar followed by a new line.
+* Return: 0
+*/
 int main(void)
-
 {
- printf("_putchar\n ");
- return (0);
+    char dev[] = "_putchar"; 
+    int x = 0;
+
+    while (dev[x] != '\0') 
+    {
+        _putchar(dev[x]); 
+        x++;
+    }
+
+    _putchar('\n');
+    return (0);
 }
+
