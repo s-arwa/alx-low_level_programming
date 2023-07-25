@@ -2,21 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - generate randon password 101- crackne
- * Return: zero 
+ * main - this main generate random pasword for 101 crackme
+ * Return: zero
  */
-int main (void)
+int main(void)
 {
 	int sum;
-	char b ;
+	char y;
 
 	srand(time(NULL));
 	while (sum <= 2645)
 	{
-		b = rand() % 128;
-		sum += b;
-		putchar(b);
+		y = rand() % 128;
+		sum += y;
+		putchar(y);
 	}
 	putchar(2772 - sum);
 	return (0);
-}
