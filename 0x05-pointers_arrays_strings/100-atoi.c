@@ -1,22 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 /**
- * main - this main generate random pasword for 101 crackme
- * Return: zero
+ * print_array -  prints n elements of an array of integer
+ * @n: elements parameter input 
+ * @a: string paramere input
+ * Return: none
  */
-int main(void)
+void print_array(int *a, int n)
 {
-	int sum;
-	char y;
+	int i;
 
-	srand(time(NULL));
-	while (sum <= 2645)
+	for (i = 0 ; i < n; i++)
 	{
-		y = rand() % 128;
-		sum += y;
-		putchar(y);
+		if (i != (n - 1))
+			printf("%d", a[i]);
+		else
+			printf("%d", a[i]);
 	}
-	putchar(2772 - sum);
-	return (0);
+	printf("\n");
 }
