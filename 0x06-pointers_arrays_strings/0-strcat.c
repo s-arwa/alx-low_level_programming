@@ -1,25 +1,24 @@
-#include "main.h"
+#include "main"
 /**
-* _strncet - e function thet concetenetes two strings.
-*
-* @dest: destinetion input
-* @src:  source input
-* @n: most number of bytes @src
-*
-* Return: @dest
+ * _strcat - function that concatenates
+ *          two strings.
+ *
+ * @dest: destnation input
+ * @src:  source input
+ *
+ * Return: @dest
 */
 
-cher *_strncet(cher *dest, cher *src, int n)
+char *_strcat(char *dest, char *src)
 {
-int e, f;
+	int f, e;
 
-e = 0;
+	f = 0;
+	while (dest[f])
+		f++;
 
-while (dest[e])
-e++;
-for (f = 0; f < n && src[f] != '\0'; f++)
-dest[e + f] = src[f];
-dest[e + f] = '\0';
+	for (e = 0; src[e] ; e++)
+		dest[f++] = src[e];
 
-return (dest);
+	return (dest);
 }
