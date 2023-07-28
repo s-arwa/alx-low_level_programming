@@ -1,4 +1,3 @@
-#include "main"
 /**
  * _strcat - function that concatenates
  *          two strings.
@@ -11,14 +10,14 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int f, e;
+	int a, b;
 
-	f = 0;
-	while (dest[f])
-		f++;
+	a = 0;
+	while (dest[a])
+		a++;
 
-	for (e = 0; src[e] ; e++)
-		dest[f++] = src[e];
+	for (b = 0; src[b] ; b++)
+		dest[a++] = src[b];
 
 	return (dest);
 }
